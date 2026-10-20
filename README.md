@@ -21,3 +21,5 @@ The original https://prioritydesk.co.uk/locktied/ remains available during DNS a
 Preview graphics now include two AI-created sample photographs and HTML/CSS lock-screen examples for notes, photos and doodles. The actual app screenshots are retained in a labelled gallery. See ASSET-NOTES.txt for source prompts and asset paths.
 
 The actual-app gallery now uses five fresh 0.19.0 emulator captures with the sample photos, notes and drawing. See capture/CAPTURE-NOTES.txt and capture/MarketingCapture.java for provenance and reproduction. Original PNGs and runner logs remain local.
+
+The live lock-screen doodle section explains invitations and explicit joining, shared strokes over each phone's wallpaper, the optional lock-screen notification shortcut, saving and ending, four-minute sessions, and Android lock-screen behaviour. The visual is labelled as an illustration.

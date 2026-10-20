@@ -277,3 +277,21 @@ nav a:hover,.text-link:hover{text-decoration:underline}
 @media(max-width:1000px) and (min-width:761px){.app-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.app-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.app-gallery figure{padding:15px 12px 12px}}
 @media(max-width:400px){.app-gallery{gap:10px}.app-gallery figure{padding:12px 9px}}
+
+/* Explain the live drawing screen and the choices on each phone. */
+.live-canvas-label{display:flex;align-items:center;justify-content:center;gap:8px}
+.live-canvas-label i{width:6px;height:6px;border-radius:50%;background:var(--green)}
+.together-art p.live-illustration-caption{font:10px/1.6 Arial,sans-serif;margin:18px auto 0;color:var(--muted);max-width:310px}
+.live-doodle-steps{list-style:none;counter-reset:live-step;padding:0;margin:26px 0 0}
+.live-doodle-steps li{counter-increment:live-step;position:relative;padding:0 0 20px 35px}
+.live-doodle-steps li:before{content:counter(live-step,decimal-leading-zero);position:absolute;left:0;top:1px;font:italic 17px Georgia,serif;color:var(--plum)}
+.live-doodle-steps strong{display:block;font-size:14px;color:var(--ink);font-weight:600;margin-bottom:5px}
+.live-doodle-steps span{display:block;font-size:13px;line-height:1.7;color:var(--muted)}
+.together-copy p.live-shortcut{font-size:13px;border-top:1px solid #d8c8c2;padding-top:20px;margin-top:0}
+.live-shortcut strong{color:var(--plum)}
+.live-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.live-facts span{font-size:10px;color:var(--plum);border:1px solid #cbb7bf;border-radius:25px;padding:5px 10px}
+.live-device-details{margin-top:22px;font-size:12px;border-block:1px solid #d8c8c2;padding:13px 0}
+.live-device-details summary{cursor:pointer;color:var(--plum);line-height:1.6}
+.live-device-details p{font-size:12px;line-height:1.7;margin-top:12px}
+@media(max-width:760px){.together-copy #live-doodle-heading{font-size:43px}.live-doodle-steps li{padding-bottom:19px}.live-facts{gap:7px}}
