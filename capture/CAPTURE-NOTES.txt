@@ -1,0 +1,34 @@
+LOCKTIED ACTUAL APP CAPTURES
+20 October 2026 — app 0.19.0, version code 19.
+
+Captured on the dedicated Android emulator at 1080 x 2400, 420 dpi.
+The UI and composited artwork were rendered by the current Android app.
+Sample photos are the AI-created website assets documented in ASSET-NOTES.txt.
+No screenshot pixels were fabricated, overlaid or retouched after capture.
+WebP versions preserve the captured content and are optimised for the website.
+
+Published captures:
+dist/images/app-home.webp
+dist/images/app-note.webp
+dist/images/app-photo.webp
+dist/images/app-doodle.webp
+dist/images/app-preview.webp
+
+Local originals: capture/raw/{home,note,photo,doodle,preview}.png (Git-ignored).
+Source fixture: capture/MarketingCapture.java.
+Build succeeded; capture completed with OK (1 test), 18 seconds.
+The fixture restores the app's local preferences, latest images and draft cache.
+No cloud sends, real pair changes, system wallpaper changes or Play uploads.
+The app's own preview clock is an in-app preview, not a system lock-screen capture.
+
+To recapture in the parent Android project:
+1. Temporarily copy MarketingCapture.java into app/src/androidTest/java/com/between/app/.
+2. Place beach-dog.webp and coffee-date.webp from dist/images in the emulator app's
+   external files folder as website-beach-dog.webp and website-coffee-date.webp.
+3. Build debug and instrumentation APKs, using a fresh output folder if OneDrive locks old files.
+4. Install both debug APKs only on the dedicated emulator.
+5. Run the com.between.app.MarketingCapture instrumentation class.
+6. Pull website-{home,note,photo,doodle,preview}.png from the app's external files folder.
+7. Restore/remove only the temporary fixture and sample files introduced for capture.
+
+Source assets and runner logs stay local; only dist/ is deployed by GitHub Pages.

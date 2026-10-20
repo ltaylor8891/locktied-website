@@ -268,3 +268,12 @@ nav a:hover,.text-link:hover{text-decoration:underline}
 @media(max-width:400px){.hero-examples{min-height:495px}.hero-screens{height:400px}.hero-primary .screen-clock>span:not(.screen-lock){font-size:39px}.hero-secondary .screen-clock>span:not(.screen-lock){font-size:31px}.hero-primary .wallpaper-message{font-size:20px}.hero-secondary .wallpaper-message{font-size:18px}.hero-secondary .wallpaper-message small{font-size:8px}.screen-clock .screen-lock{font-size:13px;margin-bottom:5px}.screen-top{font-size:7px;left:10px;right:10px}.moment-sticker{font-size:14px;bottom:36px}.lock-phone.hero-secondary{border-radius:23px}.hero-secondary .screen-bottom{left:10px;right:10px}.hero-secondary .screen-bottom>span{width:19px;height:19px;font-size:11px}.lock-example-figure .interactive-lock{max-width:100%}.app-gallery{gap:10px}.app-gallery figure{padding:12px 9px}.app-gallery figcaption span{margin-right:3px}}
 .hero-screens .hero-secondary{right:7%}
 @media(max-width:400px){.hero-examples{min-height:540px}.hero-screens{height:445px}.moment-sticker{bottom:38px}}
+
+/* Five genuine app captures, including the app's full-screen wallpaper preview. */
+.app-gallery{grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.app-gallery figure{padding:17px 13px 14px}
+.app-gallery figure:nth-child(5){background:#eee5e9}
+.capture-caption{font-size:10px;line-height:1.7;margin-top:20px;max-width:760px}
+@media(max-width:1000px) and (min-width:761px){.app-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.app-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.app-gallery figure{padding:15px 12px 12px}}
+@media(max-width:400px){.app-gallery{gap:10px}.app-gallery figure{padding:12px 9px}}
