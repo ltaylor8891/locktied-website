@@ -17,3 +17,5 @@ The landing page, screenshots, styles and script were copied from the published 
 Only public website assets are included. No app source, private settings, credentials or signed application packages are copied.
 
 The original https://prioritydesk.co.uk/locktied/ remains available during DNS and HTTPS setup. A redirect can be added after the new domain is working.
+
+Preview graphics now include two AI-created sample photographs and HTML/CSS lock-screen examples for notes, photos and doodles. The actual app screenshots are retained in a labelled gallery. See ASSET-NOTES.txt for source prompts and asset paths.

@@ -1,0 +1,14 @@
+LOCKTIED PREVIEW ASSETS
+Created 20 October 2026 with the built-in ImageGen tool.
+
+Final project files:
+dist/images/beach-dog.webp
+dist/images/coffee-date.webp
+
+These are AI-created illustrative photographs, not user photos or captured app screenshots. The website labels the lock-screen examples accordingly. Existing app screenshots are unmodified and shown in a separate labelled gallery. WebP encoding changes only the delivery format; clocks, notes, doodles and phone frames are HTML/CSS/SVG.
+
+Prompts (verbatim):
+
+1. Use case: photorealistic-natural. Asset type: portrait wallpaper photograph for a playful Android lock-screen sharing app website. Create a candid, joyful photograph of a fluffy golden retriever on a British sandy beach in warm evening light, the dog bounding toward camera with a yellow tennis ball in its mouth, sea and soft blue sky behind it, little splashes, beautifully natural fur and photographic detail. Portrait 9:16-ish composition, dog mostly in lower two thirds and clear uncluttered sky in upper quarter for a clock to be overlaid by the website. Warm honey, sea blue and peach tones. Feel fun, affectionate and spontaneous, not a stock studio portrait. Full bleed photograph only. NO typography, NO phone, NO UI, NO border, NO watermark. It is illustrative sample content, not a real user photo.
+
+2. Use case: photorealistic-natural. Asset type: portrait wallpaper photograph for a playful Android lock-screen sharing app website. Create a warm candid overhead-ish photograph of two takeaway coffees with simple latte art and two buttery croissants on a blush picnic blanket on green grass, tiny white daisies around the edges, a sunny weekend morning. Natural photographic textures, tactile paper cups without branding, cheerful and cosy. Portrait 9:16-ish composition, cups and croissants mainly in central/lower two thirds, upper quarter mostly softly lit blanket/grass with space for an overlaid clock. Warm cream, rose, sage and coffee tones compatible with a cream-and-plum website. Full bleed photograph only. NO text, NO logos, NO phone, NO UI, NO border, NO watermark. It is illustrative sample content, not a real user photo.

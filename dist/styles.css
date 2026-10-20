@@ -208,3 +208,63 @@ nav a:hover,.text-link:hover{text-decoration:underline}
 .button{transition:none}
 .button:hover{transform:none}
 }
+
+/* Photo-based illustrative lock screens, separate from the actual app gallery. */
+.hero-examples{display:block;min-height:620px}
+.hero-examples .orbit{left:7%;top:90px}
+.hero-screens{position:relative;width:100%;height:535px;margin-top:20px}
+.lock-phone{position:relative;aspect-ratio:9/19.5;border:6px solid #3e323e;border-radius:34px;overflow:hidden;isolation:isolate;background:#a88a8c;box-shadow:0 20px 40px #352a3833;color:#fff;font-family:Arial,Helvetica,sans-serif}
+.lock-phone .wallpaper-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.screen-shade{position:absolute;inset:0;background:linear-gradient(#28213124,transparent 42%,#211b2466)}
+.screen-camera{position:absolute;top:8px;left:calc(50% - 3px);width:6px;height:6px;border-radius:50%;background:#28212b;z-index:2}
+.screen-top{position:absolute;top:13px;left:15px;right:15px;display:flex;justify-content:space-between;font-size:9px;line-height:1;letter-spacing:1px}
+.screen-clock{position:absolute;top:8%;left:0;width:100%;text-align:center;display:flex;flex-direction:column;align-items:center;line-height:1.1;text-shadow:0 2px 12px #211b244d}
+.screen-clock>span:not(.screen-lock){font-size:clamp(35px,4vw,60px);font-weight:300;letter-spacing:-3px}
+.screen-clock .screen-lock{font-size:17px;margin-bottom:9px;font-family:Georgia,serif;line-height:1}
+.screen-clock small{font-size:11px;margin-top:8px}
+.wallpaper-message{position:absolute;bottom:15%;left:8%;right:8%;font:italic 28px/1.1 Georgia,serif;text-align:center;color:white;transform:rotate(-5deg);text-shadow:0 2px 12px #211b2455;overflow-wrap:break-word}
+.wallpaper-message small{display:block;font:13px/1.4 Arial,sans-serif;margin-top:8px;letter-spacing:0}
+.example-note .wallpaper-message{background:#fff4dcf2;color:#57374f;padding:18px 9px;border-radius:3px;font-size:29px;text-shadow:none;box-shadow:0 5px 14px #352a381c;bottom:15%;transform:rotate(-6deg)}
+.example-note .wallpaper-message:before{content:'';position:absolute;top:-8px;left:calc(50% - 23px);width:46px;height:17px;background:#e5ab9bc2;transform:rotate(7deg)}
+.wallpaper-doodle{position:absolute;left:17%;top:42%;width:56%;transform:rotate(-10deg);pointer-events:none}
+.wallpaper-doodle[hidden]{display:none}
+.wallpaper-doodle svg{display:block;width:100%;fill:none;stroke:#fff5dd;stroke-width:3.3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 1px 2px #67496333)}
+.hero-primary{position:absolute;top:20px;left:1%;width:51%;transform:rotate(-9deg);z-index:2}
+.hero-secondary{position:absolute;top:110px;right:0;width:45%;transform:rotate(10deg);z-index:1}
+.hero-primary .wallpaper-doodle{display:none}
+.hero-secondary .wallpaper-doodle{width:35%;left:52%;top:38%;transform:rotate(13deg)}
+.hero-secondary .screen-clock>span:not(.screen-lock){font-size:48px}
+.hero-secondary .wallpaper-message{font-size:25px}
+.hero-secondary .wallpaper-message small{font-size:10px}
+.screen-bottom{position:absolute;bottom:14px;left:15px;right:15px;display:flex;align-items:center;justify-content:space-between;font-size:14px}
+.screen-bottom>span{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#ffffff2e;backdrop-filter:blur(5px)}
+.screen-bottom i{position:absolute;bottom:-8px;left:calc(50% - 23px);width:46px;height:3px;border-radius:5px;background:#fff9}
+.moment-sticker{position:absolute;bottom:53px;left:18%;z-index:3;transform:rotate(-7deg);background:#dce8c8;color:#42543d;border:1px solid #d0daba;padding:10px 19px;border-radius:40px;box-shadow:0 5px 15px #352a3814;font:italic 18px Georgia,serif;white-space:nowrap}
+.hero-examples .photo-label{left:0;right:0;justify-content:center;font-size:9px;text-align:center}
+.lock-example-figure .interactive-lock{width:242px;margin:auto;transform:rotate(3deg)}
+.interactive-lock .screen-clock>span:not(.screen-lock){font-size:58px}
+.interactive-lock .wallpaper-message{font-size:30px}
+.example-doodle .wallpaper-doodle{top:41%;left:45%;width:43%;transform:rotate(14deg)}
+.example-doodle .wallpaper-message{bottom:13%;font-size:26px}
+.example-disclaimer{font-size:10px;line-height:1.6;margin-top:8px;color:var(--muted)}
+.lock-example-figure figcaption{color:var(--plum);font-size:11px;margin-top:25px}
+.real-app{padding-bottom:90px}
+.real-app-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:35px}
+.real-app-heading .eyebrow{margin-bottom:14px}
+.real-app-heading h2{font-size:40px}
+.real-app-heading>p{font-size:13px}
+.app-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.app-gallery figure{min-width:0;background:#f0eae9;padding:20px 18px 14px;border-radius:18px;border:1px solid #e7dce1}
+.app-gallery figure:nth-child(2){background:#ede8f2}
+.app-gallery figure:nth-child(3){background:#f3e8dc}
+.app-gallery figure:nth-child(4){background:#e8eee3}
+.app-gallery a{display:block;width:min(100%,170px);margin:auto;border:4px solid #665363;border-radius:20px;overflow:hidden;box-shadow:0 10px 15px #352a3812}
+.app-gallery img{width:100%;height:auto}
+.app-gallery figcaption{font-size:11px;color:var(--plum);margin-top:17px;line-height:1.5}
+.app-gallery figcaption span{color:#9d7b93;margin-right:7px;font-family:Georgia,serif;font-style:italic}
+@media(min-width:1500px){.hero-examples{min-height:650px}.hero-screens{margin-top:28px}.hero-primary{width:50%}.hero-secondary{right:0;width:44%}}
+@media(max-width:1000px) and (min-width:761px){.hero-examples{min-height:550px}.hero-screens{margin-top:32px;height:440px}.hero-secondary{top:105px}.hero-primary{top:30px}.hero-secondary .screen-clock>span:not(.screen-lock){font-size:35px}.hero-primary .screen-clock>span:not(.screen-lock){font-size:43px}.hero-secondary .wallpaper-message{font-size:18px}.hero-secondary .wallpaper-message small{font-size:9px}.hero-primary .wallpaper-message{font-size:22px}.moment-sticker{bottom:45px;font-size:15px;left:9%}.app-gallery{gap:14px}.app-gallery figure{padding:14px 12px}.real-app-heading h2{font-size:35px}}
+@media(max-width:760px){.hero-examples{min-height:560px;padding-top:35px}.hero-screens{margin-top:10px;height:465px}.hero-primary{width:53%;left:1%;top:18px}.hero-secondary{width:45%;right:1%;top:105px}.hero-examples .orbit{left:6%;top:95px}.hero-primary .screen-clock>span:not(.screen-lock){font-size:47px}.hero-secondary .screen-clock>span:not(.screen-lock){font-size:36px}.screen-clock small{font-size:9px}.hero-primary .wallpaper-message{font-size:24px}.hero-secondary .wallpaper-message{font-size:21px;padding:14px 7px}.hero-secondary .wallpaper-message small{font-size:9px}.lock-phone{border-width:5px;border-radius:28px}.hero-secondary .screen-top{left:10px;right:10px;font-size:7px}.moment-sticker{bottom:38px;font-size:16px;left:10%}.hero-examples .photo-label{bottom:0;font-size:8px}.lock-example-figure .interactive-lock{width:225px}.interactive-lock .screen-clock small{font-size:11px}.interactive-lock .screen-clock>span:not(.screen-lock){font-size:58px}.real-app{padding-bottom:60px}.real-app-heading{display:block;margin-bottom:25px}.real-app-heading>p{margin-top:20px}.real-app-heading h2{font-size:34px}.app-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.app-gallery figure{padding:15px 12px 12px}.app-gallery figcaption{font-size:10px}.app-gallery a{border-width:3px;border-radius:15px}}
+@media(max-width:400px){.hero-examples{min-height:495px}.hero-screens{height:400px}.hero-primary .screen-clock>span:not(.screen-lock){font-size:39px}.hero-secondary .screen-clock>span:not(.screen-lock){font-size:31px}.hero-primary .wallpaper-message{font-size:20px}.hero-secondary .wallpaper-message{font-size:18px}.hero-secondary .wallpaper-message small{font-size:8px}.screen-clock .screen-lock{font-size:13px;margin-bottom:5px}.screen-top{font-size:7px;left:10px;right:10px}.moment-sticker{font-size:14px;bottom:36px}.lock-phone.hero-secondary{border-radius:23px}.hero-secondary .screen-bottom{left:10px;right:10px}.hero-secondary .screen-bottom>span{width:19px;height:19px;font-size:11px}.lock-example-figure .interactive-lock{max-width:100%}.app-gallery{gap:10px}.app-gallery figure{padding:12px 9px}.app-gallery figcaption span{margin-right:3px}}
+.hero-screens .hero-secondary{right:7%}
+@media(max-width:400px){.hero-examples{min-height:540px}.hero-screens{height:445px}.moment-sticker{bottom:38px}}
