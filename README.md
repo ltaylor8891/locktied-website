@@ -23,3 +23,5 @@ Preview graphics now include two AI-created sample photographs and HTML/CSS lock
 The actual-app gallery now uses five fresh 0.19.0 emulator captures with the sample photos, notes and drawing. See capture/CAPTURE-NOTES.txt and capture/MarketingCapture.java for provenance and reproduction. Original PNGs and runner logs remain local.
 
 The live lock-screen doodle section explains invitations and explicit joining, shared strokes over each phone's wallpaper, the optional lock-screen notification shortcut, saving and ending, four-minute sessions, and Android lock-screen behaviour. The visual is labelled as an illustration.
+
+The noughts-and-crosses example is a real 800 x 850 animated GIF showing two phones side by side. Individual grid strokes and alternating player moves appear on both wallpapers in a 12-second loop. Play/stop, replay and GIF download controls are available. A static WebP is shown for reduced motion, when stopped, off-screen or in background tabs. The reproducible renderer and GIF encoder are in capture/.

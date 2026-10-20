@@ -12,3 +12,18 @@ Prompts (verbatim):
 1. Use case: photorealistic-natural. Asset type: portrait wallpaper photograph for a playful Android lock-screen sharing app website. Create a candid, joyful photograph of a fluffy golden retriever on a British sandy beach in warm evening light, the dog bounding toward camera with a yellow tennis ball in its mouth, sea and soft blue sky behind it, little splashes, beautifully natural fur and photographic detail. Portrait 9:16-ish composition, dog mostly in lower two thirds and clear uncluttered sky in upper quarter for a clock to be overlaid by the website. Warm honey, sea blue and peach tones. Feel fun, affectionate and spontaneous, not a stock studio portrait. Full bleed photograph only. NO typography, NO phone, NO UI, NO border, NO watermark. It is illustrative sample content, not a real user photo.
 
 2. Use case: photorealistic-natural. Asset type: portrait wallpaper photograph for a playful Android lock-screen sharing app website. Create a warm candid overhead-ish photograph of two takeaway coffees with simple latte art and two buttery croissants on a blush picnic blanket on green grass, tiny white daisies around the edges, a sunny weekend morning. Natural photographic textures, tactile paper cups without branding, cheerful and cosy. Portrait 9:16-ish composition, cups and croissants mainly in central/lower two thirds, upper quarter mostly softly lit blanket/grass with space for an overlaid clock. Warm cream, rose, sage and coffee tones compatible with a cream-and-plum website. Full bleed photograph only. NO text, NO logos, NO phone, NO UI, NO border, NO watermark. It is illustrative sample content, not a real user photo.
+
+TWO-PHONE ANIMATED GIF
+The live doodle illustration is exported as dist/images/live-doodle-two-phones.gif.
+It is 800 x 850 pixels, loops over 12 seconds, and shows synchronised sequential
+strokes on two different sample wallpapers. The illustration is code-rendered
+from the existing SVG stroke artwork and generated photo assets, not an app capture.
+The completed static frame is live-doodle-two-phones-still.webp.
+
+Reproduce with the bundled sharp Node dependency available:
+node capture/build-live-gif.cjs
+python capture/encode-live-gif.py
+
+Frame PNGs are ignored under capture/gif-frames/. GIF timing and strokes are in
+capture/live-game-strokes.json. Palette-stable encoding keeps the photo backgrounds
+steady and the delivered GIF small. The GIF can be downloaded from the website.

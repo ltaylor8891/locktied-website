@@ -1,0 +1,107 @@
+[
+  {
+    "d": "M122 35q-3 101 0 218",
+    "start": 200,
+    "duration": 360,
+    "colour": "#fff8ee",
+    "grid": true
+  },
+  {
+    "d": "M198 35q3 110-1 218",
+    "start": 650,
+    "duration": 360,
+    "colour": "#fff8ee",
+    "grid": true
+  },
+  {
+    "d": "M48 104q108-3 224 1",
+    "start": 1100,
+    "duration": 360,
+    "colour": "#fff8ee",
+    "grid": true
+  },
+  {
+    "d": "M48 180q109 3 224-1",
+    "start": 1550,
+    "duration": 360,
+    "colour": "#fff8ee",
+    "grid": true
+  },
+  {
+    "d": "m65 48 37 35",
+    "start": 2200,
+    "duration": 320,
+    "colour": "#674963",
+    "grid": false
+  },
+  {
+    "d": "m67 83 34-36",
+    "start": 2600,
+    "duration": 320,
+    "colour": "#674963",
+    "grid": false
+  },
+  {
+    "d": "m140 124 39 35",
+    "start": 4600,
+    "duration": 320,
+    "colour": "#674963",
+    "grid": false
+  },
+  {
+    "d": "m142 160 35-38",
+    "start": 5000,
+    "duration": 320,
+    "colour": "#674963",
+    "grid": false
+  },
+  {
+    "d": "m64 201 38 35",
+    "start": 7000,
+    "duration": 320,
+    "colour": "#674963",
+    "grid": false
+  },
+  {
+    "d": "m66 236 35-37",
+    "start": 7400,
+    "duration": 320,
+    "colour": "#674963",
+    "grid": false
+  },
+  {
+    "d": "M250 47c-23-7-40 8-35 25 4 17 27 20 38 6 11-15 6-29-3-31Z",
+    "start": 3400,
+    "duration": 640,
+    "colour": "#cf7189",
+    "grid": false
+  },
+  {
+    "d": "M250 199c-21-7-40 7-35 25 4 17 28 20 39 5 10-14 6-27-4-30Z",
+    "start": 5800,
+    "duration": 640,
+    "colour": "#cf7189",
+    "grid": false
+  },
+  {
+    "d": "m276 217 13-6",
+    "start": 8100,
+    "duration": 220,
+    "colour": "#dce8c8",
+    "grid": false
+  },
+  {
+    "d": "m277 231 15 3",
+    "start": 8400,
+    "duration": 220,
+    "colour": "#dce8c8",
+    "grid": false
+  },
+  {
+    "d": "m267 242 6 12",
+    "start": 8700,
+    "duration": 220,
+    "colour": "#dce8c8",
+    "grid": false
+  }
+]

@@ -91,19 +91,18 @@
     <section class="together-section" id="live-doodle" aria-labelledby="live-doodle-heading">
       <div class="wrap together-inner">
         <div class="together-art">
-          <div class="drawing-paper" aria-hidden="true">
-            <span class="live-canvas-label"><i></i> YOUR SHARED LIVE CANVAS</span>
-            <svg class="noughts-board" viewBox="0 0 320 290">
-              <g class="board-grid"><path d="M122 35q-3 101 0 218M198 35q3 110-1 218M48 104q108-3 224 1M48 180q109 3 224-1"/></g>
-              <g class="plum-line board-crosses"><path d="m65 48 37 35m-35 0 34-36M140 124l39 35m-37 1 35-38M64 201l38 35m-36 0 35-37"/></g>
-              <g class="rose-line board-noughts"><path d="M250 47c-23-7-40 8-35 25 4 17 27 20 38 6 11-15 6-29-3-31ZM250 199c-21-7-40 7-35 25 4 17 28 20 39 5 10-14 6-27-4-30Z"/></g>
-              <path class="board-flourish" d="m276 217 13-6m-12 20 15 3m-25 8 6 12"/>
-            </svg>
-            <p>A little game.<br>A little closer.</p>
-            <div class="drawing-legend"><span>You: crosses</span><span>Them: noughts</span></div>
+          <figure class="live-phones-figure">
+            <picture>
+              <source media="(prefers-reduced-motion: reduce)" srcset="images/live-doodle-two-phones-still.webp">
+              <img id="live-game-animation" src="images/live-doodle-two-phones.gif" data-still="images/live-doodle-two-phones-still.webp" data-animation="images/live-doodle-two-phones.gif" width="800" height="850" loading="lazy" alt="Two phones side by side with different wallpapers. A noughts-and-crosses grid and alternating plum crosses and rose noughts draw in sequence on both screens.">
+            </picture>
+            <figcaption class="live-illustration-caption">Animated GIF illustration of shared strokes on two phones, not an app screenshot.</figcaption>
+          </figure>
+          <div class="live-game-controls" hidden>
+            <button type="button" id="toggle-live-game" aria-controls="live-game-animation" aria-pressed="false">Stop animation</button>
+            <button type="button" id="replay-live-game" aria-controls="live-game-animation">Replay animation <span aria-hidden="true">↻</span></button>
           </div>
-          <span class="handwritten">your move. wherever you are.</span>
-          <p class="live-illustration-caption">Illustration of a hand-drawn game of noughts and crosses, not an app screenshot.</p>
+          <a class="text-link gif-download" href="images/live-doodle-two-phones.gif" download>Download the GIF <span aria-hidden="true">↓</span></a>
         </div>
         <div class="together-copy">
           <p class="eyebrow">LIVE LOCK-SCREEN DOODLE</p>

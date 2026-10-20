@@ -301,3 +301,17 @@ nav a:hover,.text-link:hover{text-decoration:underline}
 .noughts-board .board-grid{stroke:#a58d9f;stroke-width:2.5;opacity:.65}
 .noughts-board .board-crosses,.noughts-board .board-noughts{stroke-width:5}
 .noughts-board .board-flourish{stroke:var(--green);stroke-width:3}
+
+.live-game-controls{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:25px 0 0}
+.live-game-controls[hidden]{display:none}
+.live-game-controls button{border:1px solid #bba4b4;border-radius:24px;background:#fffaf173;color:var(--plum);font-size:11px;line-height:1.4;padding:10px 14px;min-height:44px;cursor:pointer}
+.live-game-controls button:hover{background:#fffaf1}
+.live-game-controls button[aria-pressed=true]{background:var(--plum);color:white}
+.live-game-controls+.handwritten{margin-top:20px}
+@media(prefers-reduced-motion:reduce){.live-game-controls{display:none}}
+
+.live-phones-figure{margin:0}
+.live-phones-figure picture,.live-phones-figure img{display:block;width:100%;height:auto}
+.live-phones-figure figcaption{font:10px/1.7 Arial,sans-serif;color:var(--muted);margin:12px auto 0;max-width:350px}
+.together-art .gif-download{display:inline-block;margin-top:15px;font-size:11px}
+@media(min-width:761px){.together-inner{grid-template-columns:1.12fr 1fr;gap:60px}}

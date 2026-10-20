@@ -32,3 +32,69 @@ buttons.forEach(button => button.addEventListener('click', () => {
   document.getElementById('wallpaper-doodle').hidden = key !== 'doodle';
   document.getElementById('example-caption').textContent = view.caption;
 }));
+
+// Controls for the real GIF asset; reduced-motion visitors see the static frame.
+(() => {
+  const image = document.getElementById('live-game-animation');
+  const controls = document.querySelector('.live-game-controls');
+  if (!image || !controls) return;
+  const toggle = document.getElementById('toggle-live-game');
+  const replay = document.getElementById('replay-live-game');
+  const caption = document.querySelector('.live-illustration-caption');
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const gif = image.dataset.animation;
+  const still = image.dataset.still;
+  let animationUrl = gif;
+  let blobUrl = null;
+  let blobPromise = null;
+  let replayVersion = 0;
+  let manuallyStopped = false;
+  let inView = !('IntersectionObserver' in window);
+
+  function updatePlayback() {
+    const playing = inView && !manuallyStopped && !motion.matches && !document.hidden;
+    const source = playing ? animationUrl : still;
+    if (image.getAttribute('src') !== source) image.src = source;
+    toggle.textContent = manuallyStopped ? 'Play animation' : 'Stop animation';
+    toggle.setAttribute('aria-pressed', String(manuallyStopped));
+  }
+  function configureMotion() {
+    controls.hidden = motion.matches;
+    caption.textContent = (motion.matches ? 'Illustration' : 'Animated GIF illustration') + ' of shared strokes on two phones, not an app screenshot.';
+    updatePlayback();
+  }
+  toggle.addEventListener('click', () => {
+    manuallyStopped = !manuallyStopped;
+    updatePlayback();
+  });
+  replay.addEventListener('click', async () => {
+    const version = ++replayVersion;
+    manuallyStopped = false;
+    try {
+      if (!blobPromise) blobPromise = fetch(gif).then(response => {
+        if (!response.ok) throw new Error('GIF unavailable');
+        return response.blob();
+      }).catch(error => { blobPromise = null; throw error; });
+      const blob = await blobPromise;
+      if (version !== replayVersion) return;
+      const oldUrl = blobUrl;
+      blobUrl = URL.createObjectURL(blob);
+      animationUrl = blobUrl;
+      updatePlayback();
+      if (oldUrl) URL.revokeObjectURL(oldUrl);
+    } catch {
+      animationUrl = gif;
+      updatePlayback();
+    }
+  });
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      inView = entries[0].isIntersecting;
+      updatePlayback();
+    }, { threshold: 0.15 });
+    observer.observe(image);
+  }
+  document.addEventListener('visibilitychange', updatePlayback);
+  motion.addEventListener('change', configureMotion);
+  configureMotion();
+})();
