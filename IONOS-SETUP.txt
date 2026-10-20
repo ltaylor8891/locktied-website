@@ -1,0 +1,44 @@
+LOCKTIED.CO.UK — IONOS SETUP
+Prepared 20 October 2026.
+
+GitHub repository: https://github.com/ltaylor8891/locktied-website
+GitHub Pages settings: https://github.com/ltaylor8891/locktied-website/settings/pages
+Primary website: https://locktied.co.uk/
+
+In IONOS, open Domains & SSL, select locktied.co.uk, then DNS.
+Keep the IONOS nameservers and existing email/MX/TXT/DKIM records.
+
+Replace the existing root A record 217.160.0.142 with these four A records:
+Type  Host  Value
+A     @     185.199.108.153
+A     @     185.199.109.153
+A     @     185.199.110.153
+A     @     185.199.111.153
+
+Remove the old root AAAA record 2001:8d8:100f:f000::200, which points to IONOS.
+For IPv6 support, replace it with these four records:
+AAAA  @     2606:50c0:8000::153
+AAAA  @     2606:50c0:8001::153
+AAAA  @     2606:50c0:8002::153
+AAAA  @     2606:50c0:8003::153
+IPv6 is optional; removing the old AAAA and using the four A records also works.
+
+Add:
+CNAME www   ltaylor8891.github.io
+
+For www, replace any conflicting A/AAAA/CNAME record rather than keeping both.
+Enter only the hostname above, without https:// or a repository path.
+Use default TTL (1 hour is fine). Do not configure IONOS URL forwarding.
+If IONOS reports a web-hosting service conflict, disconnect only the website
+assignment for this domain; preserve email records and services.
+
+After saving:
+- DNS updates can take up to 24 hours.
+- GitHub will provision a certificate after the DNS is correct.
+- In repository Settings > Pages, enable Enforce HTTPS once available.
+- Verify the root domain, www redirect, screenshots and privacy/deletion links.
+- Keep the original PriorityDesk page available until the new domain works.
+
+References:
+https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+https://www.ionos.co.uk/help/domains/dns-settings/
