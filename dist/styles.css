@@ -295,3 +295,9 @@ nav a:hover,.text-link:hover{text-decoration:underline}
 .live-device-details summary{cursor:pointer;color:var(--plum);line-height:1.6}
 .live-device-details p{font-size:12px;line-height:1.7;margin-top:12px}
 @media(max-width:760px){.together-copy #live-doodle-heading{font-size:43px}.live-doodle-steps li{padding-bottom:19px}.live-facts{gap:7px}}
+
+/* A hand-drawn shared game: plum crosses and rose noughts. */
+.drawing-paper .noughts-board{display:block;margin:10px 0 7px}
+.noughts-board .board-grid{stroke:#a58d9f;stroke-width:2.5;opacity:.65}
+.noughts-board .board-crosses,.noughts-board .board-noughts{stroke-width:5}
+.noughts-board .board-flourish{stroke:var(--green);stroke-width:3}
